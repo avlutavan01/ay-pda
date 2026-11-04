@@ -1,0 +1,219 @@
+/* ==========================================================================
+   AYPDA - RESPONSIVE DESIGN & MOBILE OPTIMIZATIONS
+   Mobile-first & Touch-friendly adaptations
+   ========================================================================== */
+
+/* Large Desktops and Monitors (>= 1440px) */
+@media (min-width: 1440px) {
+  .hero-oversized-title {
+    font-size: 5.4rem;
+  }
+}
+
+/* Laptops and Small Desktops (992px to 1280px) */
+@media (max-width: 1280px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .hero-oversized-title {
+    font-size: 3.6rem;
+  }
+  .floating-social-bar {
+    left: 1rem;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Tablets and Medium Screens (768px to 991px) */
+@media (max-width: 991px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: rgba(7, 20, 38, 0.96);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+    gap: 1.5rem;
+    border-left: 1px solid rgba(22, 199, 162, 0.2);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .nav-actions .btn-connect-header {
+    display: none;
+  }
+
+  /* Hero Section Stacking */
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-oversized-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-roles-banner {
+    justify-content: center;
+  }
+
+  .hero-actions-group {
+    justify-content: center;
+  }
+
+  .portrait-wrapper-3d {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .floating-social-bar {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Contact & Form Layout */
+  .contact-container-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Footer Layout */
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Timeline */
+  .timeline-stream::before {
+    left: 24px;
+  }
+
+  .timeline-milestone,
+  .timeline-milestone:nth-child(even) {
+    justify-content: flex-start;
+    padding-left: 55px;
+  }
+
+  .milestone-card {
+    width: 100%;
+  }
+
+  .milestone-node-dot {
+    left: 24px;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+
+  .nav-container {
+    padding: 0 1.25rem;
+  }
+
+  .site-header {
+    padding: 1rem 0;
+  }
+
+  .brand-logo img {
+    height: 36px;
+  }
+
+  .hero-section {
+    padding: 6.5rem 1.25rem 3rem;
+  }
+
+  .hero-oversized-title {
+    font-size: 2.6rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-bio-card {
+    padding: 1.6rem;
+  }
+
+  .hero-actions-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-glow-primary,
+  .btn-glow-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-wrapper {
+    padding: 4rem 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .card-3d-tilt {
+    padding: 1.6rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}

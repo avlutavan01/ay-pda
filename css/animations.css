@@ -1,0 +1,165 @@
+/* ==========================================================================
+   AYPDA - 3D ANIMATIONS & SAMAJWADI MOTION CHOREOGRAPHY
+   ========================================================================== */
+
+/* 1. Global Keyframes */
+@keyframes pulseNeon {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 10px var(--sp-red);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+    box-shadow: 0 0 20px var(--sp-red), 0 0 35px var(--sp-green);
+  }
+}
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+@keyframes shimmerGlow {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* 2. Custom Interactive Desktop Cursor */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--sp-red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, background-color 0.15s ease;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(213, 24, 31, 0.65);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+  backdrop-filter: blur(1px);
+}
+
+.custom-cursor-ring.cursor-hover {
+  width: 58px;
+  height: 58px;
+  border-color: var(--sp-green-bright);
+  background-color: rgba(0, 135, 62, 0.12);
+}
+
+.custom-cursor-dot.cursor-hover {
+  width: 12px;
+  height: 12px;
+  background-color: var(--sp-green-bright);
+}
+
+/* 3. Preloader / Brand Loading Screen */
+#site-preloader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-deep-navy);
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
+}
+
+#site-preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-brand-badge {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.preloader-emblem {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid var(--sp-green-bright);
+  box-shadow: 0 0 25px var(--sp-red-glow);
+  animation: pulseNeon 2.5s infinite ease-in-out;
+}
+
+.preloader-progress-wrap {
+  width: 240px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.preloader-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--sp-red), var(--gold-accent), var(--sp-green));
+  box-shadow: 0 0 12px var(--sp-red);
+  transition: width 0.3s ease;
+}
+
+.preloader-text {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* 4. Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .card-3d-tilt {
+    transform: none !important;
+  }
+  .custom-cursor-dot, .custom-cursor-ring {
+    display: none !important;
+  }
+}

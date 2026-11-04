@@ -1,0 +1,220 @@
+/* ==========================================================================
+   AYPDA - CUSTOM HELPERS, BILINGUAL RULES & MEDIA MODALS
+   ========================================================================== */
+
+/* Hindi Language Typography */
+[lang="hi"],
+.lang-hi {
+  font-family: 'Hind', 'Noto Sans Devanagari', -apple-system, sans-serif !important;
+}
+
+[lang="hi"] h1,
+[lang="hi"] h2,
+[lang="hi"] h3,
+[lang="hi"] h4,
+[lang="hi"] .hero-oversized-title,
+[lang="hi"] .section-title {
+  font-family: 'Hind', 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.35;
+}
+
+[lang="hi"] .nav-link,
+[lang="hi"] .btn-glow-primary,
+[lang="hi"] .btn-glow-outline,
+[lang="hi"] .btn-circular-action span {
+  font-family: 'Hind', 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+/* Lightbox Modal for Photo Gallery */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 5, 0.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content-wrap {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 30px var(--sp-red-glow);
+  border: 2px solid var(--sp-red);
+}
+
+.lightbox-caption {
+  margin-top: 1.25rem;
+  color: var(--text-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: -45px;
+  right: -20px;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.lightbox-close-btn:hover {
+  color: var(--sp-red);
+}
+
+.lightbox-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(16, 33, 27, 0.85);
+  border: 1px solid var(--sp-green);
+  color: var(--text-white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lightbox-nav-btn:hover {
+  background: var(--sp-red);
+  border-color: var(--sp-red);
+  box-shadow: 0 0 18px var(--sp-red-glow);
+}
+
+.lightbox-prev {
+  left: 2rem;
+}
+
+.lightbox-next {
+  right: 2rem;
+}
+
+/* Video Modal for MP4 and Embeds */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 5, 0.96);
+  backdrop-filter: blur(18px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-wrap {
+  position: relative;
+  width: 90%;
+  max-width: 920px;
+}
+
+.video-responsive-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 30px var(--sp-red-glow);
+  border: 2px solid var(--sp-green);
+  background: #000;
+}
+
+.video-responsive-container iframe,
+.video-responsive-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: contain;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.video-close-btn:hover {
+  color: var(--sp-red);
+}
+
+/* Toast Notification for Form Submissions */
+.toast-feedback {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(16, 33, 27, 0.95);
+  border: 1.5px solid var(--sp-green-bright);
+  backdrop-filter: blur(16px);
+  color: var(--text-white);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--sp-green-glow);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 999999;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+  opacity: 0;
+}
+
+.toast-feedback.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.toast-feedback i {
+  color: var(--sp-green-bright);
+  font-size: 1.25rem;
+}
