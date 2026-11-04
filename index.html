@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Yadav PDA | Official Samajwadi Party & Public Profile</title>
+  <meta name="description" content="Official personal political and public profile website of Abhishek Yadav PDA. Admin - PDA Swabhimaan Portal (Jangipur 376, Ghazipur), Social Media Incharge for MLA Virendra Kumar Yadav, Samajwadi Party.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Hind:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('aypda_pref_lang');
+      if (saved === 'hi') {
+        window.location.replace('hi/index.html');
+      } else if (saved === 'en') {
+        window.location.replace('en/index.html');
+      } else {
+        var browserLang = navigator.language || navigator.userLanguage || '';
+        if (browserLang.toLowerCase().indexOf('hi') === 0) {
+          window.location.replace('hi/index.html');
+        } else {
+          window.location.replace('en/index.html');
+        }
+      }
+    })();
+  </script>
+  <style>
+    .gateway-screen {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: radial-gradient(circle at 50% 30%, #15281F 0%, #070E0B 60%, #020705 100%);
+    }
+    .gateway-card {
+      background: rgba(15, 30, 24, 0.85);
+      backdrop-filter: blur(20px);
+      border: 2px solid var(--sp-red);
+      border-radius: 28px;
+      padding: 3rem 2.5rem;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px var(--sp-red-glow);
+    }
+    .gateway-logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--sp-green);
+      box-shadow: 0 0 20px var(--sp-red-glow);
+      margin-bottom: 1.5rem;
+      object-fit: cover;
+    }
+    .gateway-btn-group {
+      display: flex;
+      gap: 1.25rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="gateway-screen">
+    <div class="gateway-card">
+      <img src="assets/images/ay-logo.png" alt="AYPDA Logo" class="gateway-logo">
+      <h1 style="font-size: 1.9rem; margin-bottom: 0.35rem; color: #fff;">ABHISHEK YADAV <span style="color: var(--sp-red);">PDA</span></h1>
+      <p style="color: var(--sp-green-bright); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.08em; margin-bottom: 0.75rem;">
+        SAMAJWADI PARTY (SP) • JANGIPUR 376 • GHAZIPUR
+      </p>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">
+        Admin - PDA Swabhimaan Portal • Social Media Incharge (MLA Virendra Kumar Yadav)
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Choose your preferred language / अपनी पसंदीदा भाषा चुनें:
+      </p>
+      <div class="gateway-btn-group">
+        <a href="en/index.html" class="btn-glow-primary">
+          <i class="fa-solid fa-globe"></i> English
+        </a>
+        <a href="hi/index.html" class="btn-glow-outline">
+          <i class="fa-solid fa-language"></i> हिन्दी
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

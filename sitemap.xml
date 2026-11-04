@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Root Gateway -->
+  <url>
+    <loc>https://aypda.in/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- English URLs -->
+  <url>
+    <loc>https://aypda.in/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/index.html"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/about.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/journey.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/journey.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/vision.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/vision.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/vision.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/activities.html"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/news.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/news.html"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/gallery.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/videos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/videos.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/videos.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/achievements.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/achievements.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/achievements.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hindi URLs -->
+  <url>
+    <loc>https://aypda.in/hi/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/index.html"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/about.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/journey.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/journey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/journey.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/vision.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/vision.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/vision.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/activities.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/activities.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/activities.html"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/news.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/news.html"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/gallery.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/videos.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/videos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/videos.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/achievements.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/achievements.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/achievements.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://aypda.in/hi/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aypda.in/hi/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aypda.in/en/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
